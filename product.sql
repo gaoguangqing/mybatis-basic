@@ -1,0 +1,13 @@
+USE test;
+CREATE TABLE product(
+id INT(11) NOT NULL AUTO_INCREMENT,
+product_name VARCHAR(200)NOT NULL,
+store INT(11),
+created DATE DEFAULT NULL,
+updated DATE DEFAULT NULL,
+PRIMARY KEY(id)
+)DEFAULT CHARSET=utf8;
+
+INSERT INTO product VALUES
+(NULL,'apple',50,NOW(),NOW()),
+(NULL,'pear',60,now(),now());
